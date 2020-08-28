@@ -15,6 +15,7 @@
 		C6ADA97924F910F300B0AA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ADA97724F910F300B0AA1F /* LaunchScreen.storyboard */; };
 		C6ADA98224F9125A00B0AA1F /* Tutoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA98124F9125A00B0AA1F /* Tutoring.swift */; };
 		C6ADA98D24F9201C00B0AA1F /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA98C24F9201C00B0AA1F /* SubscriptionManager.swift */; };
+		C6ADA98F24F9289D00B0AA1F /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA98E24F9289D00B0AA1F /* Subscription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C6ADA97A24F910F300B0AA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6ADA98124F9125A00B0AA1F /* Tutoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoring.swift; sourceTree = "<group>"; };
 		C6ADA98C24F9201C00B0AA1F /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		C6ADA98E24F9289D00B0AA1F /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C6ADA98C24F9201C00B0AA1F /* SubscriptionManager.swift */,
+				C6ADA98E24F9289D00B0AA1F /* Subscription.swift */,
 			);
 			path = SubscriptionManager;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6ADA98F24F9289D00B0AA1F /* Subscription.swift in Sources */,
 				C6ADA97124F910EC00B0AA1F /* ViewController.swift in Sources */,
 				C6ADA98D24F9201C00B0AA1F /* SubscriptionManager.swift in Sources */,
 				C6ADA98224F9125A00B0AA1F /* Tutoring.swift in Sources */,

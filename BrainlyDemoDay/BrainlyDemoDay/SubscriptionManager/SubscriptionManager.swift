@@ -1,17 +1,16 @@
 import Foundation
 
-public enum SubscriptionState {
-    case monthly(Date)
-    case limitedEntries(Int)
-    case empty
-}
-
 public protocol SubscriptionManagerProtocol {
-    func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<SubscriptionState, Error>) -> Void)
+    func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void)
 }
 
 public protocol Networking {
 
+}
+
+public protocol UserProtoocol {
+    var token: String { get }
+    var market: String { get }
 }
 
 public final class SubscriptionManager: SubscriptionManagerProtocol {
@@ -22,14 +21,14 @@ public final class SubscriptionManager: SubscriptionManagerProtocol {
         self.networkManager = networkManager
     }
 
-    public func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<SubscriptionState, Error>) -> Void) {
+    public func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void) {
         //fetch using network manager
         let error = Bool.random()
         if error {
             let errorToReturn = NSError(domain: "Subscription request error", code: 999, userInfo: nil)
             completion(.failure(errorToReturn))
         } else {
-            completion(.success(.monthly(futureDate)))
+            completion(.success(Subscription(subscription: TutoringSubscription.limitedEntriesSubscription)))
         }
     }
 }

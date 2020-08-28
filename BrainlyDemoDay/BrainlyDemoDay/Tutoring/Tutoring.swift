@@ -120,6 +120,16 @@ public struct TutoringSDKUser {
 
 }
 
+extension TutoringSDKUser: UserProtoocol {
+    public var token: String {
+        "ueyryq239048n308tyh0"
+    }
+
+    public var market: String {
+        "US"
+    }
+}
+
 public enum LogLevel {
     case disabled
     case enabled
