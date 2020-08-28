@@ -13,6 +13,7 @@
 		C6ADA97424F910EC00B0AA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ADA97224F910EC00B0AA1F /* Main.storyboard */; };
 		C6ADA97624F910F300B0AA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ADA97524F910F300B0AA1F /* Assets.xcassets */; };
 		C6ADA97924F910F300B0AA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ADA97724F910F300B0AA1F /* LaunchScreen.storyboard */; };
+		C6ADA98224F9125A00B0AA1F /* Tutoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA98124F9125A00B0AA1F /* Tutoring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C6ADA97524F910F300B0AA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6ADA97824F910F300B0AA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6ADA97A24F910F300B0AA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6ADA98124F9125A00B0AA1F /* Tutoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C6ADA96B24F910EC00B0AA1F /* BrainlyDemoDay */ = {
 			isa = PBXGroup;
 			children = (
+				C6ADA98024F9124200B0AA1F /* Tutoring */,
 				C6ADA96C24F910EC00B0AA1F /* AppDelegate.swift */,
 				C6ADA96E24F910EC00B0AA1F /* SceneDelegate.swift */,
 				C6ADA97024F910EC00B0AA1F /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				C6ADA97A24F910F300B0AA1F /* Info.plist */,
 			);
 			path = BrainlyDemoDay;
+			sourceTree = "<group>";
+		};
+		C6ADA98024F9124200B0AA1F /* Tutoring */ = {
+			isa = PBXGroup;
+			children = (
+				C6ADA98124F9125A00B0AA1F /* Tutoring.swift */,
+			);
+			path = Tutoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6ADA97124F910EC00B0AA1F /* ViewController.swift in Sources */,
+				C6ADA98224F9125A00B0AA1F /* Tutoring.swift in Sources */,
 				C6ADA96D24F910EC00B0AA1F /* AppDelegate.swift in Sources */,
 				C6ADA96F24F910EC00B0AA1F /* SceneDelegate.swift in Sources */,
 			);
