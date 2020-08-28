@@ -66,6 +66,17 @@ public protocol TutoringSDKDelegate : AnyObject {
     func sessionFinished(sessionCompletionStatus: SessionCompletionStatus)
 }
 
+public protocol TutoringProtocol {
+    static var shared: Tutoring { get }
+    var delegate: TutoringSDKDelegate? { get set }
+    static func initialize(configurationUrl: URL, delegate: TutoringSDKDelegate?, errorReporter: TutoringSDKErrorReporting?, analyticsReporter: TutoringSDKAnalyticsReporting?, logLevel: LogLevel) throws
+    func login(with userConfig: TutoringSDKUser, completion: @escaping ((Swift.Result<Void, Error>) -> Void))
+    func logout()
+    func checkTutorAvailability(market: String, subjectId: String, topicId: String?, gradeId: String?, completion: @escaping ((TutorAvailability) -> Void))
+    func ask(from viewController: UIViewController, question: TutoringSDKQuestion)
+    func sessionHistory(from viewController: UIViewController)
+}
+
 public final class Tutoring {
 
     public static let shared: Tutoring = Tutoring()
