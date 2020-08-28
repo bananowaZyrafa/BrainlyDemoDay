@@ -1,7 +1,7 @@
 import Foundation
 
 public protocol SubscriptionManagerProtocol {
-    func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void)
+    func fetchSubscriptionFor(user: UserProtoocol, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void)
 }
 
 public protocol Networking {
@@ -21,7 +21,7 @@ public final class SubscriptionManager: SubscriptionManagerProtocol {
         self.networkManager = networkManager
     }
 
-    public func fetchSubscriptionFor(tutoringUser user: TutoringSDKUser, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void) {
+    public func fetchSubscriptionFor(user: UserProtoocol, completion: @escaping (Swift.Result<Subscription<TutoringSubscription>, Error>) -> Void) {
         //fetch using network manager
         let error = Bool.random()
         if error {
